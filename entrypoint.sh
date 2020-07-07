@@ -24,7 +24,8 @@ fi
 
 echo "## Installing dependencies"
 apt update
-apt -yq install git zip php-zip
+apt upgrade -yq
+apt -yq install git zip unzip
 
 echo "## Installing composer"
 curl -L https://getcomposer.org/composer-stable.phar -o /usr/bin/composer
